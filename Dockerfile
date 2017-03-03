@@ -24,7 +24,7 @@ RUN git clone -b master --single-branch https://github.com/spotweb/spotweb.git /
     chmod -R 775 /var/www/spotweb && \
     chown -R www-data:www-data /var/www/spotweb
 
-COPY ./entrypoint.sh /entrypoint.sh
+COPY files/entrypoint.sh /entrypoint.sh
 RUN chmod u+x /entrypoint.sh
 
 COPY files/000-default.conf /etc/apache2/sites-enabled/000-default.conf
