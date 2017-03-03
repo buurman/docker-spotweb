@@ -1,4 +1,3 @@
-[![](https://images.microbadger.com/badges/image/jgeusebroek/spotweb.svg)](https://microbadger.com/images/jgeusebroek/spotweb "Get your own image badge on microbadger.com")
 # Docker Spotweb image
 
 An image running [ubuntu/16.10](https://github.com/ubuntu/16.10) Linux and [Spotweb](https://github.com/spotweb/spotweb).
@@ -16,7 +15,7 @@ First create a database on your database server, and make sure the container has
 
 	docker run -it --rm -p 80:80 \
 		-e TZ='Europe/Amsterdam' \
-		jgeusebroek/spotweb
+		mbuurman/spotweb
 
 Please NOTE that there is no database configuration here, this will enable the install process.
 
@@ -67,7 +66,3 @@ The container will try to auto-update the database when a newer version is relea
 ## License
 
 MIT / BSD
-
-## Author Information
-
-[Jeroen Geusebroek](https://jeroengeusebroek.nl/)
